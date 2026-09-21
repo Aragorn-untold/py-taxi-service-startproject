@@ -11,8 +11,6 @@ class Manufacturer(models.Model):
         return self.name
     class Meta:
         ordering = ("name",)
-        verbose_name = "manufacturer"
-        verbose_name_plural = "manufacturers"
 
 
 class Car(models.Model):
@@ -23,8 +21,6 @@ class Car(models.Model):
         return self.model
     class Meta:
         ordering = ("model",)
-        verbose_name = "car"
-        verbose_name_plural = "cars"
 
 
 class Driver(AbstractUser):
